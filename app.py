@@ -3,6 +3,9 @@ import requests
 from PIL import Image
 import io
 
+api_key = st.secrets["HF_API_KEY"]  # This fetches the key securely
+
+
 st.set_page_config(page_title="Text-to-Image Generator", layout="centered")
 
 st.title("🎨 Text-to-Image Generator")
